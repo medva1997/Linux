@@ -1,0 +1,32 @@
+<VirtualHost *>
+	ServerAdmin webmaster@localhost
+
+	ServerName mail.almedvedev.balinux
+ 	ServerAlias www.mail.almedvedev.balinux
+	ServerAlias mail.almedvedev
+	ServerAlias www.mail.almedvedev
+	DocumentRoot /var/vhost/mail/
+	
+	<Directory />
+		Options FollowSymLinks
+		AllowOverride None
+	</Directory>
+
+	<Directory /var/vhost/mail/>
+		Options Indexes FollowSymLinks
+		AllowOverride All
+		DirectoryIndex index.php	
+		Order allow,deny
+		Allow from all
+	</Directory>
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+
+	# Possible values include: debug, info, notice, warn, error, crit,
+	# alert, emerg.
+	LogLevel warn
+
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+
+</VirtualHost>

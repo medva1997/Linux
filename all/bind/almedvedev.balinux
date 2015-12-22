@@ -1,0 +1,14 @@
+$TTL 60
+@	IN	SOA	ns.almedvedev.balinux. hostmaster.almedvedev.balinux. (
+			     12		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			  86400 )	; Negative Cache TTL
+@       IN      NS      ns
+@       IN      MX      10      mx
+@       IN      A       10.20.2.166
+mx      IN      A       10.20.2.166
+ns	IN	A	10.20.2.166
+mail	IN	A	10.20.2.166
+*	IN	CNAME	@
