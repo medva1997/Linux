@@ -23,3 +23,6 @@ sudo add-apt-repository ppa:attente/java-non-latin-shortcuts
 sudo apt-get update
 sudo apt-get dist-upgrade
 restart unity-settings-daemon
+
+#fix for hide "System program problem detected" messages 
+gsettings set com.ubuntu.update-notifier show-apport-crashes false
