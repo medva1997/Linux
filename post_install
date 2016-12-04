@@ -1,7 +1,7 @@
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade 
-sudo apt install ssh ffmpeg vlc codeblocks 
+sudo apt install ssh ffmpeg vlc codeblocks mc
 sudo apt-get install git gimp wget curl ssh nmap 
 
 #install java
