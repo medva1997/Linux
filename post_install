@@ -2,7 +2,7 @@ sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade 
 sudo apt install ssh ffmpeg vlc codeblocks mc
-sudo apt-get install git gimp wget curl ssh nmap 
+sudo apt install git gimp wget curl ssh nmap cups-pdf imagemagick build-essential checkinstall lm-sensors make
 
 #install java
 sudo add-apt-repository ppa:webupd8team/java
@@ -14,6 +14,14 @@ sudo apt-get install java-common oracle-java8-installer
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 sudo apt-get update
+
+#install Yandex
+wget -q -O - https://repo.yandex.ru/yandex-browser/YANDEX-BROWSER-KEY.GPG | sudo apt-key add -
+sudo sh -c 'echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta main" > /etc/apt/sources.list.d/yandex-browser-beta.list'
+sudo apt update
+sudo apt install yandex-browser-beta
+sudo apt-get install pepperflashplugin-nonfree
+
 
 sudo apt-get install laptop-mode-tools monodevelop
 sudo apt-get install gparted tree nginx-extras gunicorn python-pip 
