@@ -1,0 +1,7 @@
+mv clion* clion
+mv pycharm* pycharm
+mv Rider* rider
+sudo rm -R /usr/local/etc/rider
+sudo rm -R /usr/local/etc/clion
+sudo rm -R /usr/local/etc/pycharm
+sudo mv pycharm rider clion  /usr/local/etc/
