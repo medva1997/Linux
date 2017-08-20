@@ -32,5 +32,11 @@ sudo apt-get update
 sudo apt-get dist-upgrade
 restart unity-settings-daemon
 
+#fix L2tp
+sudo add-apt-repository ppa:nm-l2tp/network-manager-l2tp
+sudo apt update
+sudo apt install network-manager-l2tp network-manager-l2tp-gnome libreswan
+
+
 #fix for hide "System program problem detected" messages 
 gsettings set com.ubuntu.update-notifier show-apport-crashes false
