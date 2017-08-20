@@ -24,12 +24,9 @@ cd /tmp/update/
 ls  | while read line
 do
       newfolder=${line,,}
-      newfolder=${newfolder%-*}
+      newfolder=${newfolder%%-*}
       mv $line $newfolder
 done
-
-#fix
-mv idea-iu idea
 
 ls  | while read line
 do
