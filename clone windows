@@ -1,0 +1,6 @@
+ cd /media/alexey/
+ sudo mount /dev/sda4 copy/
+ sudo rm copy/win.iso 
+ sudo dd if=/dev/sda2 of=copy/win.iso bs=4096 conv=noerror,sync status=progress
+ sudo dd if=/dev/sda1 of=copy/boot.iso bs=4096 conv=noerror,sync status=progress
+ sudo dd if=/dev/sda3 of=copy/small.iso bs=4096 conv=noerror,sync status=progress
