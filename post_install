@@ -37,6 +37,11 @@ sudo add-apt-repository ppa:nm-l2tp/network-manager-l2tp
 sudo apt update
 sudo apt install network-manager-l2tp network-manager-l2tp-gnome libreswan
 
+#fix time
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+
+
+
 
 #fix for hide "System program problem detected" messages 
 gsettings set com.ubuntu.update-notifier show-apport-crashes false
