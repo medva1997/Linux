@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /tmp
 
 # clion
@@ -5,7 +6,7 @@ wget "data.services.jetbrains.com/products/download?code=CL&platform=linux" -O c
 #Rider
 wget "data.services.jetbrains.com/products/download?code=RD&platform=linux" -O rider.tar.gz
 #Idea
-wget "data.services.jetbrains.com/products/download?code=IIU&platform=linux" -O idea.tar.gz
+#wget "data.services.jetbrains.com/products/download?code=IIU&platform=linux" -O idea.tar.gz
 #pycharm
 wget "data.services.jetbrains.com/products/download?code=PCP&platform=linux" -O pycharm.tar.gz
 #datagrip
