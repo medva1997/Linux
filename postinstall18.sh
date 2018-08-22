@@ -15,5 +15,5 @@ sudo apt -y install apt-transport-https
 sudo apt -y update
 sudo apt -y install dotnet-sdk-2.1
 
-wget https://raw.githubusercontent.com/medva1997/Linux/master/jetbrains%20update -O jetbrains.sh
+wget https://raw.githubusercontent.com/medva1997/Linux/master/jetbrains.sh -O jetbrains.sh
 bash jetbrains.sh
