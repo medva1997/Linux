@@ -17,3 +17,14 @@ sudo apt -y install dotnet-sdk-2.1
 
 wget https://raw.githubusercontent.com/medva1997/Linux/master/jetbrains.sh -O jetbrains.sh
 bash jetbrains.sh
+
+
+
+sudo snap install vscode --classic
+sudo snap install sublime-text --classic
+
+sudo snap install pycharm-community --classic
+sudo snap install datagrip --classic
+sudo snap install clion --classic
+
+sudo snap install obs-studio telegram-desktop
