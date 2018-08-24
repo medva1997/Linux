@@ -27,4 +27,4 @@ sudo snap install pycharm-community --classic
 sudo snap install datagrip --classic
 sudo snap install clion --classic
 
-sudo snap install obs-studio telegram-desktop
+sudo snap install obs-studio telegram-desktop keepassxc
