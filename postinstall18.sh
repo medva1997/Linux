@@ -8,6 +8,13 @@ sudo apt -y update
 sudo apt -y dist-upgrade 
 sudo apt -y install ssh ffmpeg vlc mc chromium-browser gnome-tweak-tool git gimp wget curl ssh nmap printer-driver-cups-pdf imagemagick libcanberra-gtk-module build-essential checkinstall lm-sensors make laptop-mode-tools gparted tmux vim nano yandex-browser-beta network-manager-l2tp openvpn easy-rsa apt-transport-https
 
+#fix touchpad rigth button
+gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
+
+#fix time
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+
+
 wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb
 sudo dpkg -i packages-microsoft-prod.deb
 rm -f packages-microsoft-prod.deb
