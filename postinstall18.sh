@@ -11,6 +11,11 @@ sudo apt -y install links
 
 #fix touchpad rigth button
 gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
+#buttons on left side
+gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
+#dark mode
+#gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
+
 
 #fix time
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
