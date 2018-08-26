@@ -6,7 +6,7 @@ sudo sh -c 'echo "deb [arch=amd64] http://repo.yandex.ru/yandex-browser/deb beta
 
 sudo apt -y update
 sudo apt -y dist-upgrade 
-sudo apt -y install ssh ffmpeg vlc mc chromium-browser gnome-tweak-tool git gimp wget curl ssh nmap printer-driver-cups-pdf imagemagick libcanberra-gtk-module build-essential checkinstall lm-sensors make laptop-mode-tools gparted tmux vim nano yandex-browser-beta network-manager-l2tp openvpn easy-rsa apt-transport-https
+sudo apt -y install ssh ffmpeg vlc mc chromium-browser git gimp wget curl ssh nmap printer-driver-cups-pdf imagemagick libcanberra-gtk-module build-essential checkinstall lm-sensors make laptop-mode-tools gparted tmux vim nano yandex-browser-beta network-manager-l2tp openvpn easy-rsa apt-transport-https
 
 #fix touchpad rigth button
 gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
