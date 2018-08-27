@@ -15,7 +15,9 @@ gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
 gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,maximize:'
 #dark mode
 #gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
-
+gsettings set org.gnome.desktop.interface show-battery-percentage true
+gsettings set org.gnome.desktop.interface clock-show-date true
+#gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
 
 #fix time
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
