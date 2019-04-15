@@ -18,7 +18,9 @@ gsettings set org.gnome.desktop.wm.preferences button-layout 'close,minimize,max
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface clock-show-date true
 #gsettings set org.gnome.desktop.interface text-scaling-factor 1.25
-
+gsettings set org.gnome.settings-daemon.peripherals.touchscreen orientation-lock true
+gsettings set org.gnome.settings-daemon.plugins.orientation active false
+sudo apt remove iio-sensor-proxy -y
 #fix time
 sudo timedatectl set-local-rtc 1 --adjust-system-clock
 
